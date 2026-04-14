@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Provide focus-session and time-block API helpers for scheduling features.
+ */
 import client from "./client";
 const BASE = "/api/time";
 

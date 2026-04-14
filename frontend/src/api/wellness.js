@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Provide wellness log API helpers for the frontend.
+ */
 import client from "./client";
 
 const BASE = "/api/wellness";

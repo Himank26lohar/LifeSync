@@ -1,3 +1,8 @@
+/**
+ * Purpose:
+ * Create one shared Axios client for the frontend and automatically attach
+ * the saved session token plus browser timezone to every API request.
+ */
 import axios from "axios";
 
 const BASE_URL = "http://localhost:8000";
@@ -29,10 +34,17 @@ const client = axios.create({
 
 client.interceptors.request.use((config) => {
   const session = getStoredSession();
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   if (session?.token) {
     config.headers = {
       ...config.headers,
       Authorization: `Bearer ${session.token}`,
+      "X-Timezone": timezone,
+    };
+  } else {
+    config.headers = {
+      ...config.headers,
+      "X-Timezone": timezone,
     };
   }
   return config;

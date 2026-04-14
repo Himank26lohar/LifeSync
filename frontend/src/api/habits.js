@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Provide a small frontend wrapper around the habit API endpoints.
+ */
 import client from "./client";
 
 const BASE = "/api/habits";

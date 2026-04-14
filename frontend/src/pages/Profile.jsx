@@ -21,6 +21,7 @@ const DAILY_QUOTES = [
   "Well done is better than well said.",
   "The secret of getting ahead is getting started.",
   "What we think, we become.",
+  "You don’t have to see the whole staircase, just take the first step.",
 ];
 
 const makeId = (prefix) => `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;

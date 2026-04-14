@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Provide profile fetch/save helpers for the frontend.
+ */
 import client from "./client";
 
 const BASE = "/api/profile";

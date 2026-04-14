@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Wrap the authentication endpoints and keep browser session storage in sync with API responses.
+ */
 import client, { clearStoredSession, setStoredSession } from "./client";
 
 const BASE = "/api/auth";

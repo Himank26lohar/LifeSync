@@ -1,3 +1,7 @@
+/**
+ * Purpose:
+ * Provide journal-related API calls in one place so components stay UI-focused.
+ */
 import client from "./client";
 
 const BASE = "/api/journal";
